@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Chat</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+
+
+
+
+            <img src="https://seeklogo.com/images/L/Lorem_Ipsum-logo-1662AFAE6D-seeklogo.com.png" style="">
+            <table class="table-nav">
+                <tr><td>"Proudly made for MNNIT,</td></tr>
+                <tr><td>by MNNITians❤️❤️"</td></tr>
+            </table>
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+
+
+            <div class="toggle-dark">
+                <input type="checkbox" name="" id="switch">
+                <label for="switch">Toggle</label>
+            </div>
+
+
+
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+
+
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="https://randomuser.me/api/portraits/men/43.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownid">
+                    <div class="nameandimg">
+                        <img src="https://randomuser.me/api/portraits/men/43.jpg">
+                        <p> Khushi Raj </p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Chat Box -->
+
+    <div class="chat_box">
+        <div class="heading_chatbox">
+            <div class="img_name_chat">
+                <img src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg" alt="">
+                <h2>Kiran</h2>
+            </div>
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="see_chat">
+            <h3 id="message"></h3>
+        </div>
+        <div class="send_message">
+            <input type="text" name="" placeholder="Type Message" id="text_message">
+            <input type="text" name="" placeholder="Type Message" id="demo">
+            <i class="fa-solid fa-paper-plane" id="send_icon"></i>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        //  =============================== * navbar * ============================================
+    
+            let text = document.getElementById('text');
+            let list = document.getElementById('list');
+    
+    
+            function myfunction(omkar) {
+                text.innerHTML = omkar;
+            }
+    
+            let girl_img_id = document.getElementById('girl_img_id');
+            let dropdownid = document.getElementById('dropdownid');
+    
+            girl_img_id.addEventListener('click', () => {
+                dropdownid.classList.toggle('block_div')
+            });
+
+            // chat box
+
+            let send_icon = document.getElementById('send_icon');
+            let message = document.getElementById('message');
+            let text_message = document.getElementById('text_message');
+            let demo = document.getElementById('demo');
+
+            send_icon.addEventListener('click',()=> {
+                message.innerHTML = text_message.value;
+                message.style = 'display:block';
+                text_message.value = demo.value;
+            })
+
+</script>        
+</body>
+</html>

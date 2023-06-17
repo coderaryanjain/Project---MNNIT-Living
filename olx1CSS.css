@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    background-color: #f7f8f9;
+    box-shadow: 0 0 2px grey;
+    position: sticky;
+    top: 0%;
+}
+
+/* <!-- =============================== * navbar * ============================================ --> */
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    margin: auto;
+}
+
+.navbar img{ 
+    width: 8%; 
+    margin: 5px 55px 5px 10px;
+}
+ /* Search Box */
+
+.search_box{
+    display: flex;
+    margin-left: 30px;
+}
+
+.search_box i{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.searchclass{
+    padding: 10px;
+    width: 400px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 6px 0 0 6px;
+}
+
+
+
+/* Message icon */
+.message i{
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+
+/* IMAGE ON NAVBAR */
+
+.girl_img img{
+    width: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 55px;
+}
+.nameandimg img{
+    width: 55px;
+    border-radius: 50%;
+}
+.nameandimg p{
+    font-size: 18;
+    font-weight: bold;
+}
+.nameandimg{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+/* Drop Down Menu */
+
+.dropdown{
+    width: 250px;
+    box-shadow: 0 0 10px grey;
+    padding: 15px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 60px;
+
+}
+
+.dropdown ul li{
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.dropdown ul li:hover{
+    background-color: #c7dcff;
+}
+
+.dropdown ul{
+    margin-top: 20px;
+
+}
+
+.dropdown ul li i{
+    color: black;
+    font-size: 17px;
+
+}
+.dropdown ul li p{
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.block_div{
+    display: block;
+}
+
+/* Country Select */
+
+
+/* SELL BUTTON */
+
+.selling_page button{
+    margin-left: 25px;
+    border-style:solid ;
+    border-width: 5px;
+    border-top-color: #23e5db;
+    border-left-color: #ffce32;
+    border-right-color: #3a77ff;
+    border-bottom-color: #3a77ff;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    display: flex;
+}
+
+
+/* <!-- =============================== * product* ============================================ --> */
+
+
+
+.First_row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: auto;
+    margin-top: 35px;
+}
+.box img{
+width: 250px;
+}
+.box{
+    border: 1px solid rgb(197, 196, 196);
+    width: 260px;
+    height: 230px;
+    cursor: pointer;
+}
+.box:hover{
+    border: 1px solid rgb(138, 137, 139);
+}
+.box a{
+    text-decoration: none;
+    color: black;
+}
+.box h2{
+    padding: 5px 0 0 20px;
+}
+.box p{
+    padding: 0 0 10px 20px ;
+    color: #6f8a94;
+    font-size: 14px;
+}
+.addres_data {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.addres_data p{
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+/* Toggle Button */
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+input:checked + label{
+    background: #bada55;
+}
+label{
+    cursor: pointer;
+    background: gray;
+    text-indent: -9999px;
+    width: 50px;
+    height: 30px;
+    display: block;
+    border-radius:100px;
+    position:relative;   
+}
+label:after{
+    content:'';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background:white ;
+    border-radius: 70px;
+    transition:0.3s;
+}
+input:checked+label:after{
+    left:calc(100%-5px);
+    transform: translateX(100%);
+}
+label:active:after{
+    width:20px;
+}
+
+.toggle-dark{
+    margin-left: 25px;
+    margin-bottom: 18px;
+
+}
+
+
+
+
+/* <!-- =============================== * lode more * ============================================ --> */
+
+
+
+.LOde_more button{
+    margin: 50px auto;
+    padding: 8px 16px ;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    transition: all 0.5s;
+    border: 2px solid black;
+}
+.LOde_more button:hover{
+    border: 4px solid black;
+}
+#lode_more_products_id{
+   display: none;
+}
+
+
+
+/* <!-- =============================== * downlode * ============================================ --> */
+
+
+
+.downlode_app{
+    background-color: #f7f8f9;
+}
+.downlode{
+    margin: 100px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imges{
+    width: 400px;
+}
+.text{
+    border-right: 2px solid #cacdce;
+}
+.text h1{
+    padding: 20px 20px 10px 20px ;
+    font-size: 35px;
+}
+.text p{
+    padding: 10px 20px 20px 20px;
+    font-size: 20px;
+}
+.downlode_store p{
+    padding: 20px 20px 20px 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+.downlode_store{
+    padding-left: 30px;
+}
+.downlode_store img{
+  width: 140px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* <!-- =============================== * footer * ============================================ --> */
+
+
+.Main_footerP{
+    background-color: #ebeeef;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+}
+.footer_box h2{
+    font-size: 17px;
+    margin: 10px 0 15px 0;
+    cursor: pointer;
+}
+.footer_box p{
+    margin: 8px 0 8px 0;
+    cursor: pointer;
+}

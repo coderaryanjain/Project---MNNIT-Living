@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="product_us.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+
+
+
+
+            <img src="https://seeklogo.com/images/L/Lorem_Ipsum-logo-1662AFAE6D-seeklogo.com.png" style="">
+            <table class="table-nav">
+                <tr><td>"Proudly made for MNNIT,</td></tr>
+                <tr><td>by MNNITians❤️❤️"</td></tr>
+            </table>
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+            <div class="toggle-dark">
+                <input type="checkbox" name="" id="switch">
+                <label for="switch">Toggle</label>
+            </div>
+            <div class="message">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+            <div class="your_logo">
+                <div class="girl_img" id="girl_img_id">
+                    <img src="https://randomuser.me/api/portraits/men/43.jpg">
+                </div>
+
+                <div class="dropdown" id="dropdownid">
+                    <div class="nameandimg">
+                        <img src="https://randomuser.me/api/portraits/men/43.jpg">
+                        <p> Khushi Raj </p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="product_img">
+        <div class="image_description">
+            <div class="swiper">
+   
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2012/12/27/19/40/chain-link-72864__340.jpg" alt="" srcset=""></div>
+                    <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2018/06/17/20/35/chain-3481377__340.jpg" alt="" srcset=""></div>
+                    <div class="swiper-slide"><img src="https://cdn.pixabay.com/photo/2016/02/28/12/55/boy-1226964__340.jpg" alt="" srcset=""></div>
+    
+                </div>
+        
+                <div class="swiper-pagination"></div>
+      
+                <div class="swiper-button-prev" id="prev"></div>
+                <div class="swiper-button-next" id="next"></div>
+                
+            </div>
+           
+            <div class="description">
+                <h3>Description</h3>
+                <p>Convert your TV into smart TV using HDMI of your TV. All online platform available downloaded. <br>
+                    Include MI stick, Bluetooth remote, Power adapter. <br>
+                    Condition new. <br>
+                    MRP 3,500</p>
+            </div>
+
+        </div>
+
+
+        <div class="product_details">
+            <div class="box">
+                <div class="price">
+                    <h3> ₹3,500</h3>
+                    <div>
+                        <p><i class="fa-solid fa-share-nodes"></i> </p>
+                        <p> <i class="fa-regular fa-heart"></i> </p>
+                    </div>
+                </div>
+                <span> Mi TV Stick </span>
+                <div class="location">
+                    <p>Ghatkopar West, Mumbai, Maharashtra</p>
+                    <p>Today</p>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <p class="Seller_description"> <b>Seller Description</b> </p>
+                <div class="seller_detail">
+                    <img src="https://randomuser.me/api/portraits/men/43.jpg">
+                    <div>
+                        <h2> Khushi Raj </h2>
+                        <p>Member since Nov 2021</p>
+                    </div>
+                </div>
+                <a href="chat.html"> Chat with Seller  </a>
+
+            </div>
+
+         <div class="box" id="box3">
+              <h2> Posted in </h2>
+              <p>Bandra East, Mumbai</p>
+              <img src="https://4.bp.blogspot.com/-tMcg1lAj2-E/XF8Q30N3VrI/AAAAAAAAAbU/VupUZ9nNUb4x1DgkmJJ5cO_JkdjXAYx4gCLcBGAs/s1600/address-gps-android-new-api.jpg" >
+         </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    //  =============================== * navbar * ============================================
+
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+        let girl_img_id = document.getElementById('girl_img_id');
+        let dropdownid = document.getElementById('dropdownid');
+
+        girl_img_id.addEventListener('click', () => {
+            dropdownid.classList.toggle('block_div')
+        });
+
+    //    Swiper
+                    const swiper = new Swiper('.swiper', {
+
+                    direction: 'horizontal',
+                    loop: true,
+
+                     pagination: {
+                       el: '.swiper-pagination',
+                     },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    });
+    </script>
+</body>
+</html>
