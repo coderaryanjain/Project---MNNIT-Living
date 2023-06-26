@@ -15,6 +15,10 @@ body{
     z-index: 5;
 }
 
+.table-nav{
+    text-align: center;
+}
+
 .navbar{
     display: flex;
     align-items: center;

@@ -1,0 +1,46 @@
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback & Complaints</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'><link rel="stylesheet" href="lstyle.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-form">
+  <form action="mailto:coderjibest@gmail.com" method="post">
+    <img src="logo.png" style="text-align: center;padding-top: 30px;padding-left: 170px;">
+    <h1 style="padding-top: 15px;">For Feedback & Complaints:</h1>
+    <div class="content">
+      <div class="input-field">
+        <input type="text" placeholder="Name" autocomplete="nope" name="name">
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Phone Number" autocomplete="nope" name="phnumber" maxlength="10" minlength="10">
+      </div>
+      <div class="input-field">
+        <input type="email" placeholder="Email" autocomplete="nope" name = "email">
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Write your Suggestions Here" autocomplete="nope" name="suggestions">
+      </div>
+      {{!-- <a href="#" class="link">Forgot Your Password?</a> --}}
+      <p style="color: red;">All Fields are Required.</p>
+    </div>
+    <div class="action">
+      <button style="display: none;"></button>
+      <button>Send</button>
+    </div>
+  </form>
+  <br>
+  <p style="text-align: center;">
+    Go back to <a href="/">Home</a>
+  </p>
+  <br>
+</div>
+<!-- partial -->
+
+
+</body>
+</html>
